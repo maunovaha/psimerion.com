@@ -1,24 +1,9 @@
-# README
+This is a website of Psimerion ry, made with Ruby on Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+If you have any questions regarding this website or license, start by reaching us using contact information below.
 
-Things you may want to cover:
+Website: http://psimerion.com
 
-* Ruby version
+Email: hello[at]psimerion.com
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Twitter: @psimerion
