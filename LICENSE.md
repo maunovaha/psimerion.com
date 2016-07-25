@@ -1,0 +1,1 @@
+> Copyright (c) 2016 and beyond, Psimerion ry. All rights reserved.
