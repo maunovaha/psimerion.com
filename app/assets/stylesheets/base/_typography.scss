@@ -3,5 +3,121 @@
  */
 body {
   color: $color-text;
-  font: normal 125% / 1.4 $font-stack-default;
+  font-size: 125%;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: $font-family-main;
+  line-height: $line-height-main;
+}
+
+/**
+ * Styles for headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.#{$css-prefix-heading}-h1,
+.#{$css-prefix-heading}-h2,
+.#{$css-prefix-heading}-h3,
+.#{$css-prefix-heading}-h4,
+.#{$css-prefix-heading}-h5,
+.#{$css-prefix-heading}-h6 {
+}
+
+/**
+ * Styles for links
+ */
+a {
+  color: $color-brand;
+  text-decoration: none;
+
+  @include on-event {
+    color: $color-text;
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Styles for text - alignment
+ */
+.#{$css-prefix-text}-left {
+  text-align: left;
+}
+
+.#{$css-prefix-text}-right {
+  text-align: right;
+}
+
+.#{$css-prefix-text}-center {
+  text-align: center;
+}
+
+.#{$css-prefix-text}-justify {
+  text-align: justify;
+}
+
+.#{$css-prefix-text}-nowrap {
+  white-space: nowrap;
+}
+
+/**
+ * Styles for text - transformation
+ */
+.#{$css-prefix-text}-lowercase {
+  text-transform: lowercase;
+}
+
+.#{$css-prefix-text}-uppercase {
+  text-transform: uppercase;
+}
+
+.#{$css-prefix-text}-capitalize {
+  text-transform: capitalize;
+}
+
+/**
+ * Styles for text - colors
+ */
+.#{$css-prefix-text}-primary {
+}
+
+.#{$css-prefix-text}-success {
+}
+
+.#{$css-prefix-text}-info {
+}
+
+/**
+ * Styles for lists
+ */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-main / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+.#{$css-prefix-list}-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.#{$css-prefix-list}-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

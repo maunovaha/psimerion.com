@@ -5,7 +5,7 @@
 /**
  * Clear inner floats
  */
-.clearfix::after {
+.#{$css-prefix-helper}-clearfix::after {
   clear: both;
   content: '';
   display: table;
@@ -13,24 +13,19 @@
 
 /**
  * Main content containers
- * 1. Center it in the viewport
- * 2. Leave some space on the edges, especially valuable on small screens
- * 3. Make the container full-width
  */
-.container {
-  margin-left: auto; /* 1 */
-  margin-right: auto; /* 1 */
-  padding-left: 20px; /* 2 */
-  padding-right: 20px; /* 2 */
-  width: 100%; /* 3 */
+.#{$css-prefix-helper}-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
  }
 
 /**
  * Hide text while making it readable for screen readers
- * 1. Needed in WebKit-based browsers because of an implementation bug;
- *    See: https://code.google.com/p/chromium/issues/detail?id=457146
  */
-.hide-text {
+.#{$css-prefix-helper}-hide-text {
   overflow: hidden;
   padding: 0; /* 1 */
   text-indent: 101%;
@@ -39,10 +34,8 @@
 
 /**
  * Hide element while making it readable for screen readers
- * Shamelessly borrowed from HTML5Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
-.visually-hidden {
+.#{$css-prefix-helper}-visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;

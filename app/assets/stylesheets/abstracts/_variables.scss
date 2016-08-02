@@ -2,46 +2,28 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+// CSS prefixes
+$css-prefix-main:   'ps' !default;
+$css-prefix-helper:  $css-prefix-main + '-helper'  !default;
+$css-prefix-heading: $css-prefix-main + '-heading' !default;
+$css-prefix-text:    $css-prefix-main + '-text'    !default;
+$css-prefix-list:    $css-prefix-main + '-list'    !default;
+$css-prefix-header:  $css-prefix-main + '-header'  !default;
+$css-prefix-footer:  $css-prefix-main + '-footer'  !default;
+$css-prefix-button:  $css-prefix-main + '-button'  !default;
+
 // Fonts
-// -----------------------------------------------------------------------------
-
-/// Regular font family
-/// @type List
-$font-stack-default: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$font-stack-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$font-family-main: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 // Colors
-// -----------------------------------------------------------------------------
-
-/// Main brand color
-/// @type Color
-$color-brand: #e50050 !default;
-
-/// Light grey
-/// @type Color
-$color-light-grey: #f7f7f7 !default;
-
-/// Medium grey
-/// @type Color
-$color-mid-grey: #999999 !default;
-
-/// Dark grey
-/// @type Color
-$color-dark-grey: #444444 !default;
-
-/// Copy text color
-/// @type Color
-$color-text: $color-dark-grey !default;
+$color-brand:      #e50050          !default;
+$color-light-grey: #f7f7f7          !default;
+$color-mid-grey:   #999999          !default;
+$color-dark-grey:  #444444          !default;
+$color-text:       $color-dark-grey !default;
 
 // Breakpoints
-// -----------------------------------------------------------------------------
-
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
   'small': 320px,
   'medium': 768px,
@@ -49,10 +31,7 @@ $breakpoints: (
 ) !default;
 
 // Asset urls
-// -----------------------------------------------------------------------------
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+// Misc
+$line-height-main: 1.4em !default;
