@@ -30,8 +30,6 @@ $breakpoints: (
   'large': 1024px,
 ) !default;
 
-// Asset urls
-$base-url: '/assets/' !default;
-
 // Misc
-$line-height-main: 1.4em !default;
+$misc-line-height: 1.4em !default;
+$misc-url: '/assets/' !default;

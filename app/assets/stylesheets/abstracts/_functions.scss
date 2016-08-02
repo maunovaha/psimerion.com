@@ -8,11 +8,11 @@
 }
 
 // Returns URL to an image based on its path
-@function image($path, $base: $base-url) {
+@function image($path, $base: $misc-base-url) {
   @return asset($base, 'images/', $path);
 }
 
 // Returns URL to a font based on its path
-@function font($path, $base: $base-url) {
+@function font($path, $base: $misc-base-url) {
   @return asset($base, 'fonts/', $path);
 }
