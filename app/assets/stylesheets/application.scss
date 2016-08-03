@@ -8,7 +8,10 @@
 
 // Vendors
 @import
-  'vendor/normalize';
+  'vendor/normalize',
+  'vendor/purecss/base',
+  'vendor/purecss/grids',
+  'vendor/purecss/grids-responsive';
 
 // Base stuff
 @import
