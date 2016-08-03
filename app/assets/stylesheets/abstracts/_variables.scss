@@ -2,26 +2,38 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-// CSS prefixes
-$css-prefix-main:   'ps' !default;
-$css-prefix-helper:  $css-prefix-main + '-helper'  !default;
-$css-prefix-heading: $css-prefix-main + '-heading' !default;
-$css-prefix-text:    $css-prefix-main + '-text'    !default;
-$css-prefix-list:    $css-prefix-main + '-list'    !default;
-$css-prefix-header:  $css-prefix-main + '-header'  !default;
-$css-prefix-footer:  $css-prefix-main + '-footer'  !default;
-$css-prefix-button:  $css-prefix-main + '-button'  !default;
-
 // Fonts
-$font-family-main: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-$font-family-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$font-family-sans-serif: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-size-base: 20px;
+$font-size-large: ceil(($font-size-base * 1.25)); // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)); // ~12px
+$font-size-h1: floor(($font-size-base * 2.6));    // ~36px
+$font-size-h2: floor(($font-size-base * 2.15));   // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7));     // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25));    // ~18px
+$font-size-h5: $font-size-base;
+$font-size-h6: ceil(($font-size-base * 0.85));    // ~12px
+
+// Headings
+$headings-font-family: inherit;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+$headings-small-color: #505050; // Same as gray
+
+// Line heights
+$line-height-base: 1.428571429; // 20/14
+$line-height-computed: floor(($font-size-base * $line-height-base)); // ~20px
 
 // Colors
-$color-brand:      #e50050          !default;
-$color-light-grey: #f7f7f7          !default;
-$color-mid-grey:   #999999          !default;
-$color-dark-grey:  #444444          !default;
-$color-text:       $color-dark-grey !default;
+$colors: (
+  'red': #cd402a,
+  'green': #3dcd2a,
+  'gray-light': #f7f7f7,
+  'gray': #505050,
+  'gray-dark': #1c1c1c,
+  'gray-darker': #141414,
+) !default;
 
 // Breakpoints
 $breakpoints: (
@@ -31,5 +43,4 @@ $breakpoints: (
 ) !default;
 
 // Misc
-$misc-line-height: 1.4em !default;
 $misc-base-url: '/assets/' !default;

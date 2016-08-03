@@ -5,27 +5,16 @@
 /**
  * Clear inner floats
  */
-.#{$css-prefix-helper}-clearfix::after {
+.ps-helper-clearfix::after {
   clear: both;
   content: '';
   display: table;
 }
 
 /**
- * Main content containers
- */
-.#{$css-prefix-helper}-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
- }
-
-/**
  * Hide text while making it readable for screen readers
  */
-.#{$css-prefix-helper}-hide-text {
+.ps-helper-hide-text {
   overflow: hidden;
   padding: 0; /* 1 */
   text-indent: 101%;
@@ -35,7 +24,7 @@
 /**
  * Hide element while making it readable for screen readers
  */
-.#{$css-prefix-helper}-visually-hidden {
+.ps-helper-visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;

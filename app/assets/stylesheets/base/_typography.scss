@@ -1,116 +1,177 @@
-/**
- * Basic typography style for copy text
- */
+// -----------------------------------------------------------------------------
+// This file contains basic typography.
+// -----------------------------------------------------------------------------
+
+/* Basics
+   ========================================================================== */
+
 body {
-  color: $color-text;
-  font-size: 125%;
+  color: map-get($colors, 'gray-light');
+  font-size: $font-size-base;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   font-stretch: normal;
-  font-family: $font-family-main;
-  line-height: $misc-line-height;
+  font-family: $font-family-sans-serif;
+
 }
 
-/**
- * Styles for headings
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.#{$css-prefix-heading}-h1,
-.#{$css-prefix-heading}-h2,
-.#{$css-prefix-heading}-h3,
-.#{$css-prefix-heading}-h4,
-.#{$css-prefix-heading}-h5,
-.#{$css-prefix-heading}-h6 {
+html, body, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: $font-family-sans-serif;
 }
 
-/**
- * Styles for links
- */
-a {
-  color: $color-brand;
-  text-decoration: none;
+/* Styles for headings
+   ========================================================================== */
 
-  @include on-event {
-    color: $color-text;
-    text-decoration: underline;
+h1, h2, h3, h4, h5, h6,
+.ps-h1, .ps-h2, .ps-h3, .ps-h4, .ps-h5, .ps-h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+
+  small,
+  .ps-small {
+    font-weight: normal;
+    line-height: 1;
+    color: $headings-small-color;
   }
 }
 
-/**
- * Styles for text - alignment
- */
-.#{$css-prefix-text}-left {
+h1, .ps-h1,
+h2, .ps-h2,
+h3, .ps-h3 {
+  margin-top: $line-height-computed;
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .ps-small {
+    font-size: 65%;
+  }
+}
+h4, .ps-h4,
+h5, .ps-h5,
+h6, .ps-h6 {
+  margin-top: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .ps-small {
+    font-size: 75%;
+  }
+}
+
+h1, .ps-h1 { font-size: $font-size-h1; }
+h2, .ps-h2 { font-size: $font-size-h2; }
+h3, .ps-h3 { font-size: $font-size-h3; }
+h4, .ps-h4 { font-size: $font-size-h4; }
+h5, .ps-h5 { font-size: $font-size-h5; }
+h6, .ps-h6 { font-size: $font-size-h6; }
+
+/* Styles for links
+   ========================================================================== */
+
+a {
+  color: map-get($colors, 'gray-light');
+  text-decoration: none;
+
+  @include on-event {
+    color: map-get($colors, 'gray-light');
+  }
+}
+
+/* Styles for body text & helpers
+   ========================================================================== */
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+// Ex: (12px small font / 14px base font) * 100% = about 85%
+small,
+.ps-small {
+  font-size: floor((100% * $font-size-small / $font-size-base));
+}
+
+@each $color, $hex in $colors {
+  .ps-text-#{$color} {
+    color: $hex;
+  }
+}
+
+.ps-text-left {
   text-align: left;
 }
 
-.#{$css-prefix-text}-right {
+.ps-text-right {
   text-align: right;
 }
 
-.#{$css-prefix-text}-center {
+.ps-text-center {
   text-align: center;
 }
 
-.#{$css-prefix-text}-justify {
+.ps-text-justify {
   text-align: justify;
 }
 
-.#{$css-prefix-text}-nowrap {
+.ps-text-normal {
+  font-weight: normal;
+}
+
+.ps-text-bold {
+  font-weight: bold;
+}
+
+.ps-text-italic {
+  font-weight: italic;
+}
+
+.ps-text-nowrap {
   white-space: nowrap;
 }
 
-/**
- * Styles for text - transformation
- */
-.#{$css-prefix-text}-lowercase {
+.ps-text-lowercase {
   text-transform: lowercase;
 }
 
-.#{$css-prefix-text}-uppercase {
+.ps-text-uppercase {
   text-transform: uppercase;
 }
 
-.#{$css-prefix-text}-capitalize {
+.ps-text-capitalize {
   text-transform: capitalize;
 }
 
-/**
- * Styles for text - colors
- */
-.#{$css-prefix-text}-primary {
+/* Styles for backgrounds
+   ========================================================================== */
+
+@each $color, $hex in $colors {
+  .ps-bg-#{$color} {
+    background: $hex;
+  }
 }
 
-.#{$css-prefix-text}-success {
-}
+/* Styles for lists
+   ========================================================================== */
 
-.#{$css-prefix-text}-info {
-}
-
-/**
- * Styles for lists
- */
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: ($misc-line-height / 2);
+  margin-bottom: ($line-height-computed / 2);
   ul,
   ol {
     margin-bottom: 0;
   }
 }
 
-.#{$css-prefix-list}-unstyled {
+.ps-list-unstyled {
   padding-left: 0;
   list-style: none;
 }
 
-.#{$css-prefix-list}-inline {
+.ps-list-inline {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;

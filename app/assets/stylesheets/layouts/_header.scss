@@ -2,8 +2,9 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.#{$css-prefix-header} {
+.ps-header {
   background: image-url('header-bg.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
+

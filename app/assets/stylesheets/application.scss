@@ -22,11 +22,12 @@
 
 // Components
 @import
-  'components/button';
+  'components/buttons';
 
 // Layout-related sections
 @import
   'layouts/header',
+  'layouts/nav',
   'layouts/footer';
 
 // Page-specific styles
