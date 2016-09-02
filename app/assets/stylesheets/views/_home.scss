@@ -4,5 +4,9 @@
 
   h2 {
     color: map-get($colors, "gray");
+
+    .ps-time-ago {
+      color: map-get($colors, "green");
+    }
   }
 }
