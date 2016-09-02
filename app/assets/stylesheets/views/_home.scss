@@ -2,11 +2,15 @@
   border-top: 1px solid map-get($colors, "red");
   background: map-get($colors, "gray-dark");
 
-  h2 {
-    color: map-get($colors, "gray");
+  .ps-header-home {
+    margin-bottom: 60px;
 
-    .ps-time-ago {
-      color: map-get($colors, "green");
+    p {
+      color: map-get($colors, "gray");
+
+      .ps-time-ago {
+        color: map-get($colors, "green");
+      }
     }
   }
 }
