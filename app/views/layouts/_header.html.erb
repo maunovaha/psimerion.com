@@ -1,28 +1,24 @@
-<!-- Header -->
-<header role="banner" class="ps-header">
+<header role="banner" class="ps-banner">
   <nav role="navigation">
-    <ul class="ps-list-inline">
-      <li class="ps-text-uppercase">
-        <%= link_to "psimerion", root_path %>
+    <ul class="ps-list-inline ps-navbar">
+      <li class="ps-text-bold">
+        <%= link_to "PSIMERION", root_path %>
       </li>
       <li>|</li>
       <li>
-        <%= link_to "Forum", "#" %>
+        <small><%= link_to "Forum", "http://forum.psimerion.com" %></small>
       </li>
     </ul>
   </nav>
 
-  <!--
-  <div class="logo-wrapper">
-    <img src="http://www.maunovaha.com/assets/logo-5e49e134165f24d90b057e124f6be2786595f612f3b328f82ee13305df51643b.png" alt="psimerion">
+  <div class="ps-text-center">
+    <div class="ps-logo-psimerion">
+      <h2>PSIMERION</h2>
+      <h1>The provider of the best RUST-server in Finland</h1>
+    </div>
   </div>
-  -->
-  <!--
-  <p>
-    Suomalainen RUST-peliservereiden ylläpitäjä.
-  </p>
-  -->
-  <!--
-  <img src="http://i0.wp.com/playrust.com/wp-content/uploads/2013/12/rust-icon-512.png" alt="RUST" class="rust-logo">
-  -->
+
+  <%= link_to "https://playrust.com", target: "_blank", class: "ps-logo-rust" do %>
+    <%= image_tag("rust-logo.png", alt: "RUST logo", width: 81) %>
+  <% end %>
 </header>
