@@ -1,31 +1,8 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
+.ps-main-home {
+  border-top: 1px solid map-get($colors, "red");
+  background: map-get($colors, "gray-dark");
 
-.ps-home-banner {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 770px;
-  text-align: center;
-  // Add custom break-points based on max-width
-
-  h1 {
-    font-size: 80px;
-    /*
-    display: inline-block;
-    padding: 0px;
-    font-weight: bold;
-    margin: 0px;
-    font-size: 90px;
-    */
-    // background: map-get($colors, 'red');
-  }
-
-  p {
-    /*
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    */
+  h2 {
+    color: map-get($colors, "gray");
   }
 }
