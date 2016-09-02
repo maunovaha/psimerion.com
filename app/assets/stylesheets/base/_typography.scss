@@ -6,7 +6,7 @@
    ========================================================================== */
 
 body {
-  color: map-get($colors, 'gray-light');
+  color: map-get($colors, "gray-light");
   font-size: $font-size-base;
   font-style: normal;
   font-variant: normal;
@@ -73,11 +73,11 @@ h6, .ps-h6 { font-size: $font-size-h6; }
    ========================================================================== */
 
 a {
-  color: map-get($colors, 'gray-light');
+  color: map-get($colors, "gray-light");
   text-decoration: none;
 
   @include on-event {
-    color: map-get($colors, 'gray-light');
+    color: map-get($colors, "gray-light");
   }
 }
 

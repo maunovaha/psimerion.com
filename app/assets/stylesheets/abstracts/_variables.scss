@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 // Fonts
-$font-family-sans-serif: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-sans-serif: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 $font-size-base: 20px;
 $font-size-large: ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small: ceil(($font-size-base * 0.85)); // ~12px
@@ -27,20 +27,20 @@ $line-height-computed: floor(($font-size-base * $line-height-base)); // ~20px
 
 // Colors
 $colors: (
-  'red': #cd402a,
-  'green': #3dcd2a,
-  'gray-light': #f7f7f7,
-  'gray': #505050,
-  'gray-dark': #1c1c1c,
-  'gray-darker': #141414,
+  "red": #cd402a,
+  "green": #3dcd2a,
+  "gray-light": #f7f7f7,
+  "gray": #505050,
+  "gray-dark": #1c1c1c,
+  "gray-darker": #141414,
 ) !default;
 
 // Breakpoints
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
 ) !default;
 
 // Misc
-$misc-base-url: '/assets/' !default;
+$misc-base-url: "/assets/" !default;

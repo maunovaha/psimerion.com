@@ -1,35 +1,35 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 // Configuration and helpers
 @import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
+  "abstracts/variables",
+  "abstracts/functions",
+  "abstracts/mixins";
 
 // Vendors
 @import
-  'vendor/normalize',
-  'vendor/purecss/base',
-  'vendor/purecss/grids',
-  'vendor/purecss/grids-responsive';
+  "vendor/normalize",
+  "vendor/purecss/base",
+  "vendor/purecss/grids",
+  "vendor/purecss/grids-responsive";
 
 // Base stuff
 @import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+  "base/base",
+  "base/fonts",
+  "base/typography",
+  "base/helpers";
 
 // Components
 @import
-  'components/buttons';
+  "components/buttons";
 
-// Layout-related sections
-@import
-  'layouts/header',
-  'layouts/nav',
-  'layouts/footer';
+// // Layout-related sections
+// @import
+//   "layouts/header",
+//   "layouts/nav",
+//   "layouts/footer";
 
 // Page-specific styles
 @import
-  'views/home';
+  "views/home";
